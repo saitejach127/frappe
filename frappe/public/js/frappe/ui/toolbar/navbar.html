@@ -4,6 +4,9 @@
 			<img class="app-logo" style="width: {{ navbar_settings.logo_width || 24 }}px" src="{{ frappe.boot.app_logo_url }}">
 		</a>
 		<ul class="nav navbar-nav d-none d-sm-flex" id="navbar-breadcrumbs"></ul>
+		<a class="nav navbar-nav d-none d-sm-flex" href="/sales-data-entry/new">
+			<p>Enter Sales Data</p>
+		</a>
 		<div class="collapse navbar-collapse justify-content-end">
 			<form class="form-inline fill-width justify-content-end" role="search" onsubmit="return false;">
 				{% if (frappe.boot.read_only) { %}
